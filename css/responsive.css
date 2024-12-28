@@ -1,204 +1,165 @@
 @media screen and (max-width: 600px) {
-    .wf61IpZ51_1 > h1 {
-      font-size: 30px;
-      width: 100%;
-    }
-    .YU752_2EfskO > a > p,
-    .uyT8_Lpo2XYs4Z_Ul > p {
-      font-size: 11px;
-    }
-    .wf61IpZ51_1 > p {
-      width: 100%;
-      font-size: 12px;
-      line-height: 18px;
-      margin: 0;
-      padding: 0;
-    }
-    .Iod86_dH95_jdZx_f {
-      display: flex;
-      flex-direction: column;
-    }
-    .wPond_hbY42_2 > img {
-      display: none;
-    }
-    .uyT8_Lpo2XYs4Z_Ul > ul {
-      gap: 14px;
-      flex-wrap: wrap;
-    }
-    .yTe54PlOZ68_cardf {
-      padding: 30px 0;
-      overflow-x: hidden;
+  .wf61IpZ51_1 > h1 {
+    font-size: 30px;
+    width: 100%;
   }
-    .UnsdZI5P1G_H4dO54M_f56E {
-      padding: 12px 0;
-    }
-    .gJkhe_547_img_area > h3,
-    .lchDE3rTh15-imDoWn > h4 {
-      font-size: 28px;
-    }
-    .Yte74P900_kjhgaX236_cTeXt2l > h2 {
-      padding-bottom: 8px;
-      font-size: 28px;
-    }
-    .Yte74P900_kjhgaX236_cTeXt2l > p {
-      font-size: 14px;
-      line-height: 24px;
-      margin: 0;
-      padding: 5px 0 20px;
-    }
-    .J45L_H75_F > img {
-      width: 70px;
-    }
-    .gJkhe_547_img_area {
-      padding-block: 30px;
-    }
-    .prize_section_0ContentArea {
-      padding: 25px 0px 0px 0px;
-      text-align: center;
+  .hg_prize_picks_card {
+    margin: 0px;
   }
-    .gJkhe_547_45gtgXimages a img,
-    .gJkhe_547_45gtgXimages div img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      max-width: 88px;
-    }
-    .lkO_54Lpo_Card_1 > .jgrtopll4-c > h2 {
-      font-size: 26px;
-      width: 100%;
-  }.lkO_54Lpo_Card_2 > .jgrtopll4-c > h2 {
+  .footer_prizepicks-links > ul > li > a {
+    font-size: 13px;
+  }
+  .YU752_2EfskO > a > p,
+  .uyT8_Lpo2XYs4Z_Ul > p {
+    font-size: 11px;
+  }
+  .wf61IpZ51_1 > p {
+    width: 100%;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
+  }
+  .Iod86_dH95_jdZx_f {
+    display: flex;
+    flex-direction: column;
+  }
+  .wPond_hbY42_2 > img {
+    display: none;
+  }
+  .uyT8_Lpo2XYs4Z_Ul > ul {
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .wf61IpZ51_1 > h1 {
+    padding: 0px;
+  }
+  .yTe54PlOZ68_cardf {
+    padding: 30px 0;
+    overflow-x: hidden;
+  }
+  .UnsdZI5P1G_H4dO54M_f56E {
+    padding: 12px 0;
+  }
+  .gJkhe_547_img_area > h3,
+  .lchDE3rTh15-imDoWn > h4 {
+    font-size: 28px;
+  }
+  .Yte74P900_kjhgaX236_cTeXt2l > h2 {
+    padding-bottom: 8px;
+    font-size: 22px;
+  }
+  .Yte74P900_kjhgaX236_cTeXt2l > p {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+    padding: 5px 0 20px;
+  }
+  .J45L_H75_F > img {
+    width: 70px;
+  }
+  .gJkhe_547_img_area {
+    padding-block: 30px;
+  }
+  .prize_section_0ContentArea {
+    padding: 25px 0 0;
+    text-align: center;
+  }
+  .gJkhe_547_45gtgXimages a img,
+  .gJkhe_547_45gtgXimages div img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-width: 88px;
+  }
+  .prizepick_bonus1 > .jgrtopll4-c > h2,
+  .prizepick_bonus2 > .jgrtopll4-c > h2,
+  .prizepick_bonus3 > .jgrtopll4-c > h2,
+  .prizepick_bonus4 > .jgrtopll4-c > h2 {
     font-size: 26px;
     width: 100%;
-    }.lkO_54Lpo_Card_3 > .jgrtopll4-c > h2 {
-      font-size: 26px;
-      width: 100%;
-    }.lkO_54Lpo_Card_4 > .jgrtopll4-c > h2 {
-      font-size: 26px;
-      width: 100%;
-    }
-
-    .lkO_54Lpo_Card_1 {
-      background-position: left 12% center;
   }
-    .prize_section_0Home_img > img {
-      width: 168px;
-      position: relative;
-      top: -10px;
+  .prizepick_bonus1 {
+    background-position: left 12% center;
   }
-
+  .prize_section_0Home_img > img {
+    width: 168px;
+    position: relative;
+    top: -10px;
+  }
   .prize_section_content-text > p {
     font-size: 14px;
     text-transform: capitalize;
-    padding: 0px 0px;
+    padding: 0;
     font-style: oblique;
-}
-.prize_section_content-text > h1 {
-  font-family: "Roboto", serif;
-  color: #8000ff;
-  font-size: 30px;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-    .lkO_54Lpo_Card_1 > .jgrtopll4-c {
-      width: 400px;
+  }
+  .prize_section_content-text > h1 {
+    font-family: Roboto, serif;
+    color: #8000ff;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .prizepick_bonus1 > .jgrtopll4-c,
+  .prizepick_bonus2 > .jgrtopll4-c,
+  .prizepick_bonus3 > .jgrtopll4-c,
+  .prizepick_bonus4 > .jgrtopll4-c {
+    width: 400px;
   }
   .prize_section_0Home_btn > a {
     display: ruby-text;
-    margin: 0px 4px;
+    margin: 0 4px;
+  }
+  .prize_section_0Home_btn > a > button {
+    padding: 6px 22px;
+    border-radius: 30px;
+    outline: 0;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  .prize_section_0HomeFlex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+  .jgrtopll4-c > p {
+    font-size: 15px;
+    width: 210px;
+  }
 }
-
-.prize_section_0Home_btn > a > button {
-  padding: 8px 22px;
-  border-radius: 30px;
-  outline: 0px;
-  color: #fff;
-  font-size: 12px;
-  margin-top: 20px;
+@media only screen and (max-width: 390px) and (min-width: 300px) {
+  .prize_section_0Home_img > img {
+    width: 120px;
+    position: relative;
+    top: -10px;
+  }
+  .prizepick_bonus1 {
+    background-position: left 20% center;
+    height: 260px;
+  }
+  .prizepick_bonus1 > .jgrtopll4-c,
+  .prizepick_bonus2 > .jgrtopll4-c,
+  .prizepick_bonus3 > .jgrtopll4-c,
+  .prizepick_bonus4 > .jgrtopll4-c {
+    height: 265px;
+    width: 350px;
+  }
+  .prizepick_bonus2,
+  .prizepick_bonus3,
+  .prizepick_bonus4 {
+    height: 260px;
+  }
 }
-
-.prize_section_0HomeFlex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 0px;
+@media only screen and (max-width: 1024px) and (min-width: 601px) {
+  .wPond_hbY42_2 > img {
+    width: 191px;
+    position: absolute;
+    top: -10px;
+    left: -44px;
+  }
+  .jgrtopll4-c > p {
+    height: 145px;
+  }
 }
-
-    .lkO_54Lpo_Card_2 > .jgrtopll4-c {
-      width: 400px;
-    }
-
-    .lkO_54Lpo_Card_3 > .jgrtopll4-c {
-      width: 400px;
-    }
-
-    .lkO_54Lpo_Card_4 > .jgrtopll4-c {
-      width: 400px;
-    }
-
-    .jgrtopll4-c > p {
-      font-size: 15px;
-      width: 210px;
-  }
-  }
-
-
-  @media only screen and (max-width: 390px) and (min-width: 300px) {
-    .prize_section_0Home_img > img {
-      width: 120px;
-      position: relative;
-      top: -10px;
-    }
-    .lkO_54Lpo_Card_1 {
-      background-position: left 20% center;
-    }
-    .lkO_54Lpo_Card_1 {
-      height: 260px;
-    }
-    .lkO_54Lpo_Card_1 > .jgrtopll4-c {
-      height: 265px;
-    }
-    .lkO_54Lpo_Card_1 > .jgrtopll4-c {
-      width: 350px;
-    }
-    .lkO_54Lpo_Card_2 {
-      height: 260px;
-    }
-    .lkO_54Lpo_Card_2 > .jgrtopll4-c {
-      height: 265px;
-    }
-    .lkO_54Lpo_Card_2 > .jgrtopll4-c {
-      width: 350px;
-    }
-    .lkO_54Lpo_Card_3 {
-      height: 260px;
-    }
-    .lkO_54Lpo_Card_3 > .jgrtopll4-c {
-      height: 265px;
-    }
-    .lkO_54Lpo_Card_3 > .jgrtopll4-c {
-      width: 350px;
-    }
-    .lkO_54Lpo_Card_4 {
-      height: 260px;
-    }
-    .lkO_54Lpo_Card_4 > .jgrtopll4-c {
-      height: 265px;
-    }
-    .lkO_54Lpo_Card_4 > .jgrtopll4-c {
-      width: 350px;
-    }
-  }
-
-
-  @media only screen and (max-width: 1024px) and (min-width: 601px) {
-    .wPond_hbY42_2 > img {
-      width: 191px;
-      position: absolute;
-      top: -10px;
-      left: -44px;
-    }
-    .jgrtopll4-c > p {
-      height: 145px;
-    }
-  }
-  
