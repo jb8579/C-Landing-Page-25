@@ -163,3 +163,13 @@
     height: 145px;
   }
 }
+@media only screen and (max-width: 864px) and (min-width: 601px) {
+  .prizepick_bonus1 > .jgrtopll4-c, 
+  .prizepick_bonus2 > .jgrtopll4-c, 
+  .prizepick_bonus3 > .jgrtopll4-c, 
+  .prizepick_bonus4 > .jgrtopll4-c {
+    background: radial-gradient(circle at -1% 57.5%, #000 0, rgb(12 8 64) 90%);
+    width: 395px;
+    height: 277px;
+  }
+}
