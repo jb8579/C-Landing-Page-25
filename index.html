@@ -37,6 +37,7 @@
             </div>
             <div class="login-form-container">
                 <div class="login-form">
+                    <button class="close-btn">&times;</button>
                     <div class="log-img">
                         <img src="images/prizepicks-logo-img.svg" alt="Logo">
                     </div>
@@ -48,6 +49,7 @@
             </div>
             <div class="register-form-container">
                 <div class="register-form">
+                    <button class="close-btn">&times;</button>
                     <div class="log-img">
                         <img src="images/prizepicks-logo-img.svg" alt="Logo">
                     </div>
@@ -60,6 +62,7 @@
             </div>
             <div class="forgot-password-form-container">
                 <div class="forgot-password-form">
+                    <button class="close-btn">&times;</button>
                     <div class="log-img">
                         <img src="images/prizepicks-logo-img.svg" alt="Logo">
                     </div>
@@ -73,8 +76,8 @@
                 <p>Authorization link has been sent!</p>
             </div>
             <style>
-                .login-form-container, 
-                .register-form-container, 
+                .login-form-container,
+                .register-form-container,
                 .forgot-password-form-container {
                     display: none;
                     position: fixed;
@@ -88,22 +91,29 @@
                     z-index: 999;
                     font-family: "Inter", serif !important;
                 }
-                .login-form, .register-form, .forgot-password-form {
+            
+                .login-form,
+                .register-form,
+                .forgot-password-form {
                     background: radial-gradient(circle at -1% 57.5%, rgb(0, 0, 0) 0%, rgb(12 8 64) 90%);
                     padding: 3rem 2rem;
                     width: 90%;
                     max-width: 400px;
                     display: flex;
                     flex-direction: column;
+                    position: relative;
                 }
+            
                 .log-img {
                     width: 100%;
                     text-align: center;
                     margin-bottom: 35px;
                 }
+            
                 .log-img img {
                     width: 250px;
                 }
+            
                 input.log-input {
                     border: 1px solid #535662 !important;
                     outline: 0;
@@ -115,10 +125,12 @@
                     color: #fff !important;
                     font-weight: 400 !important;
                 }
+            
                 ::placeholder {
                     color: rgba(167, 167, 167, 0.801);
                     opacity: 1;
                 }
+            
                 .toggle-login-btn {
                     background: transparent !important;
                     margin: 12px 0px;
@@ -131,6 +143,7 @@
                     position: relative;
                     top: -5px;
                 }
+            
                 button {
                     margin: 6px 0;
                     padding: 10px 0;
@@ -141,20 +154,26 @@
                     outline: 0px;
                     border: 0px;
                 }
-                .login-btn, .register-btn, .forgot-password-btn {
+            
+                .login-btn,
+                .register-btn,
+                .forgot-password-btn {
                     background: #8000ff !important;
                     color: #fff !important;
                 }
+            
                 .forgot-password {
                     color: #8000ff !important;
                     font-size: 15px !important;
                     text-align: center;
                 }
+            
                 .back-to-login-btn {
                     background: transparent !important;
                     border: 1px solid #8000ff;
                     color: #8000ff;
                 }
+            
                 .popup-message {
                     position: fixed;
                     top: 50%;
@@ -169,44 +188,78 @@
                     font-size: 15px !important;
                     font-family: "Inter", serif !important;
                 }
+            
                 .login-form-container.active,
                 .register-form-container.active,
                 .forgot-password-form-container.active {
                     display: flex;
                 }
+            
                 .popup-message.show {
                     display: block;
                 }
+            
+                .close-btn {
+                    position: absolute;
+                    top: -12px;
+                    right: 16px;
+                    background: transparent;
+                    border: none;
+                    font-size: 22px;
+                    color: white;
+                    cursor: pointer;
+                }
+                
+                .close-btn:hover {
+                    color: #8000ff;
+                }
+
                 p.forgot-password-instructions {
                     color: #fff;
                 }
             </style>
             <script>
                 document.addEventListener('DOMContentLoaded', function () {
-                    function openLoginPopup() {
-                        document.querySelector('.login-form-container').classList.add('active');
+                    function closePopup(popupSelector) {
+                        document.querySelector(popupSelector).classList.remove('active');
                     }
-                    function openRegisterPopup() {
-                        document.querySelector('.register-form-container').classList.add('active');
-                    }
+            
+                    document.querySelectorAll('.close-btn').forEach(button => {
+                        button.addEventListener('click', function (event) {
+                            const popupContainer = event.target.closest('.login-form-container, .register-form-container, .forgot-password-form-container');
+                            if (popupContainer) {
+                                popupContainer.classList.remove('active');
+                            }
+                        });
+                    });
+            
                     document.querySelectorAll('[data-popup-trigger="login"]').forEach(button => {
-                        button.addEventListener('click', openLoginPopup);
+                        button.addEventListener('click', function () {
+                            document.querySelector('.login-form-container').classList.add('active');
+                        });
                     });
+            
                     document.querySelectorAll('[data-popup-trigger="register"]').forEach(button => {
-                        button.addEventListener('click', openRegisterPopup);
+                        button.addEventListener('click', function () {
+                            document.querySelector('.register-form-container').classList.add('active');
+                        });
                     });
+            
                     document.querySelector('.toggle-login-btn').addEventListener('click', function () {
-                        document.querySelector('.register-form-container').classList.remove('active');
+                        closePopup('.register-form-container');
                         document.querySelector('.login-form-container').classList.add('active');
                     });
+            
                     document.querySelector('.forgot-password').addEventListener('click', function () {
-                        document.querySelector('.login-form-container').classList.remove('active');
+                        closePopup('.login-form-container');
                         document.querySelector('.forgot-password-form-container').classList.add('active');
                     });
+            
                     document.querySelector('.back-to-login-btn').addEventListener('click', function () {
-                        document.querySelector('.forgot-password-form-container').classList.remove('active');
+                        closePopup('.forgot-password-form-container');
                         document.querySelector('.login-form-container').classList.add('active');
                     });
+            
                     function showPopupMessage(message) {
                         const popup = document.querySelector('.popup-message');
                         popup.textContent = message;
@@ -215,16 +268,19 @@
                             popup.classList.remove('show');
                         }, 3000);
                     }
+            
                     document.querySelector('.login-btn').addEventListener('click', function () {
-                        document.querySelector('.login-form-container').classList.remove('active');
+                        closePopup('.login-form-container');
                         showPopupMessage("Logged in successfully!");
                     });
+            
                     document.querySelector('.register-btn').addEventListener('click', function () {
-                        document.querySelector('.register-form-container').classList.remove('active');
+                        closePopup('.register-form-container');
                         showPopupMessage("Registered successfully!");
                     });
+            
                     document.querySelector('.forgot-password-btn').addEventListener('click', function () {
-                        document.querySelector('.forgot-password-form-container').classList.remove('active');
+                        closePopup('.forgot-password-form-container');
                         showPopupMessage("Password reset link has been sent to your email!");
                     });
                 });
