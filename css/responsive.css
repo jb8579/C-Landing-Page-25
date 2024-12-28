@@ -27,7 +27,8 @@
     }
     .yTe54PlOZ68_cardf {
       padding: 30px 0;
-    }
+      overflow-x: hidden;
+  }
     .UnsdZI5P1G_H4dO54M_f56E {
       padding: 12px 0;
     }
@@ -63,16 +64,16 @@
       max-width: 88px;
     }
     .lkO_54Lpo_Card_1 > .jgrtopll4-c > h2 {
-      font-size: 28px;
+      font-size: 26px;
       width: 100%;
   }.lkO_54Lpo_Card_2 > .jgrtopll4-c > h2 {
-    font-size: 28px;
+    font-size: 26px;
     width: 100%;
     }.lkO_54Lpo_Card_3 > .jgrtopll4-c > h2 {
-      font-size: 28px;
+      font-size: 26px;
       width: 100%;
     }.lkO_54Lpo_Card_4 > .jgrtopll4-c > h2 {
-      font-size: 28px;
+      font-size: 26px;
       width: 100%;
     }
 
@@ -133,7 +134,62 @@
     .lkO_54Lpo_Card_4 > .jgrtopll4-c {
       width: 400px;
     }
+
+    .jgrtopll4-c > p {
+      font-size: 15px;
+      width: 210px;
   }
+  }
+
+
+  @media only screen and (max-width: 390px) and (min-width: 300px) {
+    .prize_section_0Home_img > img {
+      width: 120px;
+      position: relative;
+      top: -10px;
+    }
+    .lkO_54Lpo_Card_1 {
+      background-position: left 20% center;
+    }
+    .lkO_54Lpo_Card_1 {
+      height: 260px;
+    }
+    .lkO_54Lpo_Card_1 > .jgrtopll4-c {
+      height: 265px;
+    }
+    .lkO_54Lpo_Card_1 > .jgrtopll4-c {
+      width: 350px;
+    }
+    .lkO_54Lpo_Card_2 {
+      height: 260px;
+    }
+    .lkO_54Lpo_Card_2 > .jgrtopll4-c {
+      height: 265px;
+    }
+    .lkO_54Lpo_Card_2 > .jgrtopll4-c {
+      width: 350px;
+    }
+    .lkO_54Lpo_Card_3 {
+      height: 260px;
+    }
+    .lkO_54Lpo_Card_3 > .jgrtopll4-c {
+      height: 265px;
+    }
+    .lkO_54Lpo_Card_3 > .jgrtopll4-c {
+      width: 350px;
+    }
+    .lkO_54Lpo_Card_4 {
+      height: 260px;
+    }
+    .lkO_54Lpo_Card_4 > .jgrtopll4-c {
+      height: 265px;
+    }
+    .lkO_54Lpo_Card_4 > .jgrtopll4-c {
+      width: 350px;
+    }
+  }
+
+
   @media only screen and (max-width: 1024px) and (min-width: 601px) {
     .wPond_hbY42_2 > img {
       width: 191px;
